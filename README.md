@@ -62,7 +62,7 @@ ORDER BY
     TotalSales DESC;
 
 ```
-![Line graph](https://github.com/sharifahstella/DSA_Kultra-Mega-Stores-Inventory/blob/main/cate.PNG) 
+![Line graph](https://github.com/sharifahstella/DSA_Kultra-Mega-Stores-Inventory/blob/main/top3.PNG) 
 
 There fore with 
 ```
