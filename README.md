@@ -64,7 +64,7 @@ ORDER BY
 ```
 ![Line graph](https://github.com/sharifahstella/DSA_Kultra-Mega-Stores-Inventory/blob/main/top3.PNG) 
 
-There fore with 
+Therefore West ,Ontario and Parie top 3 regions respectively in sales leading to the most seen regions profitably
 ```
 SELECT TOP 3
     Region,
@@ -77,4 +77,22 @@ ORDER BY
     TotalSales ASC;
 
 ```
-![Line graph](https://github.com/sharifahstella/DSA_Kultra-Mega-Stores-Inventory/blob/main/cate.PNG) 
+![Line graph](https://github.com/sharifahstella/DSA_Kultra-Mega-Stores-Inventory/blob/main/bottom3.PNG) 
+
+However the bottom 3 regions that include Nunavit,Northwest Territories and Yukon call for the most attention to improve on the sales in the regions.
+
+- Total sales of appliances in Ontario
+
+```
+SELECT
+    SUM(Sales) AS TotalSalesOfAppliances
+FROM 
+    [dbo].[KMS Sql Case Study]
+WHERE 
+    Product_Category = 'Appliances'
+    AND Region = 'Ontario';
+
+```
+![Line graph](https://github.com/sharifahstella/DSA_Kultra-Mega-Stores-Inventory/blob/main/bottom3.PNG) 
+
+Therefore there was no total sales of appliances in Ontario which also calls for the most seen region that has to increase on the sales in the region of ontario.
