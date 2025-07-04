@@ -47,3 +47,34 @@ ORDER BY
 Technology having the highest sales 
 
  ![Line graph](https://github.com/sharifahstella/DSA_Kultra-Mega-Stores-Inventory/blob/main/cate.PNG) 
+
+- Top 3 and Bottom 3 regions in terms of sales
+
+```
+SELECT TOP 3
+    Region,
+    SUM(Sales) AS TotalSales
+FROM 
+    [dbo].[KMS Sql Case Study]
+GROUP BY 
+    Region
+ORDER BY 
+    TotalSales DESC;
+
+```
+![Line graph](https://github.com/sharifahstella/DSA_Kultra-Mega-Stores-Inventory/blob/main/cate.PNG) 
+
+There fore with 
+```
+SELECT TOP 3
+    Region,
+    SUM(Sales) AS TotalSales
+FROM 
+    [dbo].[KMS Sql Case Study]
+GROUP BY 
+    Region
+ORDER BY 
+    TotalSales ASC;
+
+```
+![Line graph](https://github.com/sharifahstella/DSA_Kultra-Mega-Stores-Inventory/blob/main/cate.PNG) 
