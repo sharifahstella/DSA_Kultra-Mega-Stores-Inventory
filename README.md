@@ -93,6 +93,24 @@ WHERE
     AND Region = 'Ontario';
 
 ```
-![Line graph](https://github.com/sharifahstella/DSA_Kultra-Mega-Stores-Inventory/blob/main/bottom3.PNG) 
+![Line graph](https://github.com/sharifahstella/DSA_Kultra-Mega-Stores-Inventory/blob/main/null.PNG) 
 
 Therefore there was no total sales of appliances in Ontario which also calls for the most seen region that has to increase on the sales in the region of ontario.
+
+- Recommendations to increase revenue from the bottom 10 customers
+
+```
+SELECT TOP 10
+    Customer_Segment,
+    Customer_Name,
+    SUM(Sales) AS TotalSales
+FROM 
+    [dbo].[KMS Sql Case Study]
+GROUP BY 
+    Customer_Segment,
+    Customer_Name
+ORDER BY 
+    TotalSales ASC;
+
+```
+![Line graph](https://github.com/sharifahstella/DSA_Kultra-Mega-Stores-Inventory/blob/main/null.PNG)  
