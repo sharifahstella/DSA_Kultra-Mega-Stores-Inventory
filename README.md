@@ -113,4 +113,26 @@ ORDER BY
     TotalSales ASC;
 
 ```
-![Line graph](https://github.com/sharifahstella/DSA_Kultra-Mega-Stores-Inventory/blob/main/null.PNG)  
+![Line graph](https://github.com/sharifahstella/DSA_Kultra-Mega-Stores-Inventory/blob/main/cate2.PNG)  
+
+Recommendations:
+- 1. Personalized Engagement: Assign account managers to follow up and understand why spend is low.
+- 2. Targeted Promotions: Offer exclusive discounts or loyalty rewards.
+- 3. Cross-Selling: Recommend related products based on prior purchases.
+- 4. Feedback Collection: Survey customers to learn about unmet needs.
+- 5. Streamlined Ordering: Simplify reorder processes.
+ 
+- Shipping method with the highest shipping cost
+
+```
+SELECT TOP 1
+    Ship_Mode,
+    COUNT(Shipping_Cost) AS TotalShippingCost
+FROM 
+    [dbo].[KMS Sql Case Study]
+GROUP BY 
+    Ship_Mode
+ORDER BY 
+    TotalShippingCost DESC;
+
+```
