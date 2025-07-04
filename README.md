@@ -46,4 +46,4 @@ ORDER BY
 ```
 Technology having the highest sales 
 
- ![Line graph](https://github.com/sharifahstella/LITA-Capstone-Project1/blob/main/result3.PNG) 
+ ![Line graph](https://github.com/sharifahstella/DSA_Kultra-Mega-Stores-Inventory/blob/main/cate.PNG) 
